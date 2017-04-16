@@ -1,0 +1,7 @@
+---
+
+- name: "Atualiza repositórios"
+  apt:
+    update_cache: yes
+
+# tasks file for update

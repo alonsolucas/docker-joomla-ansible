@@ -1,0 +1,14 @@
+---
+
+- name: "Executa container Joomla!"
+  docker:
+    name: joomla
+    image: joomla
+    state: started
+    links:
+      - "joomladb:mysql"
+    ports:
+      - "8080:80"
+
+
+# tasks file for joomla

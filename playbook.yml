@@ -1,0 +1,8 @@
+---
+
+- hosts: joomla
+  become: yes
+  roles:
+    - update
+    - joomladb
+    - joomla
